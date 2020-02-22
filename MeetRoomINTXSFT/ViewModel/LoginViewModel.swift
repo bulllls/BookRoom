@@ -9,13 +9,6 @@
 import Foundation
 
 class LoginViewModel {
-    
-    var scenesAssembly = ScenesAssembly()
-    var networkManager = Network()
-    
-    
-    func openLink(){
-        scenesAssembly.openLink(string: "https://stackoverflow.com/")
-    }
+
 }
 
