@@ -3,27 +3,35 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		774717A191FEFB3492AE52D3 /* Pods_MeetRoomINTXSFT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 258BF47E0ADE338F14B7B086 /* Pods_MeetRoomINTXSFT.framework */; };
 		9B37D7AA23FFAD6A004B5673 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B37D7A923FFAD6A004B5673 /* AppDelegate.swift */; };
-		9B37D7AC23FFAD6A004B5673 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B37D7AB23FFAD6A004B5673 /* ViewController.swift */; };
-		9B37D7AF23FFAD6A004B5673 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B37D7AD23FFAD6A004B5673 /* Main.storyboard */; };
+		9B37D7AC23FFAD6A004B5673 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B37D7AB23FFAD6A004B5673 /* LoginViewController.swift */; };
+		9B37D7AF23FFAD6A004B5673 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B37D7AD23FFAD6A004B5673 /* Auth.storyboard */; };
 		9B37D7B223FFAD6A004B5673 /* MeetRoomINTXSFT.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9B37D7B023FFAD6A004B5673 /* MeetRoomINTXSFT.xcdatamodeld */; };
 		9B37D7B423FFAD6B004B5673 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B37D7B323FFAD6B004B5673 /* Assets.xcassets */; };
 		9B37D7B723FFAD6B004B5673 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B37D7B523FFAD6B004B5673 /* LaunchScreen.storyboard */; };
+		9B37D7C524011DE4004B5673 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B37D7C424011DE4004B5673 /* Network.swift */; };
+		9B37D7C724012297004B5673 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B37D7C624012297004B5673 /* LoginViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		258BF47E0ADE338F14B7B086 /* Pods_MeetRoomINTXSFT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeetRoomINTXSFT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		60E4F079870C76B531E922CA /* Pods-MeetRoomINTXSFT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeetRoomINTXSFT.debug.xcconfig"; path = "Target Support Files/Pods-MeetRoomINTXSFT/Pods-MeetRoomINTXSFT.debug.xcconfig"; sourceTree = "<group>"; };
 		9B37D7A623FFAD6A004B5673 /* MeetRoomINTXSFT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeetRoomINTXSFT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B37D7A923FFAD6A004B5673 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9B37D7AB23FFAD6A004B5673 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9B37D7AE23FFAD6A004B5673 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9B37D7AB23FFAD6A004B5673 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		9B37D7AE23FFAD6A004B5673 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Auth.storyboard; sourceTree = "<group>"; };
 		9B37D7B123FFAD6A004B5673 /* MeetRoomINTXSFT.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MeetRoomINTXSFT.xcdatamodel; sourceTree = "<group>"; };
 		9B37D7B323FFAD6B004B5673 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B37D7B623FFAD6B004B5673 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B37D7B823FFAD6B004B5673 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B37D7C424011DE4004B5673 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		9B37D7C624012297004B5673 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		D653AEF01EB18EFDC609DCAC /* Pods-MeetRoomINTXSFT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeetRoomINTXSFT.release.xcconfig"; path = "Target Support Files/Pods-MeetRoomINTXSFT/Pods-MeetRoomINTXSFT.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				774717A191FEFB3492AE52D3 /* Pods_MeetRoomINTXSFT.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		51D1EFBE80A13D077EA31ECB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				258BF47E0ADE338F14B7B086 /* Pods_MeetRoomINTXSFT.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6C4713E61F38813058591D18 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				60E4F079870C76B531E922CA /* Pods-MeetRoomINTXSFT.debug.xcconfig */,
+				D653AEF01EB18EFDC609DCAC /* Pods-MeetRoomINTXSFT.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		9B37D79D23FFAD6A004B5673 = {
 			isa = PBXGroup;
 			children = (
 				9B37D7A823FFAD6A004B5673 /* MeetRoomINTXSFT */,
 				9B37D7A723FFAD6A004B5673 /* Products */,
+				6C4713E61F38813058591D18 /* Pods */,
+				51D1EFBE80A13D077EA31ECB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +84,57 @@
 		9B37D7A823FFAD6A004B5673 /* MeetRoomINTXSFT */ = {
 			isa = PBXGroup;
 			children = (
+				9B37D7BE24000ED3004B5673 /* Model */,
+				9B37D7BF24000EDE004B5673 /* ViewModel */,
+				9B37D7C124000EEF004B5673 /* View */,
 				9B37D7A923FFAD6A004B5673 /* AppDelegate.swift */,
-				9B37D7AB23FFAD6A004B5673 /* ViewController.swift */,
-				9B37D7AD23FFAD6A004B5673 /* Main.storyboard */,
 				9B37D7B323FFAD6B004B5673 /* Assets.xcassets */,
 				9B37D7B523FFAD6B004B5673 /* LaunchScreen.storyboard */,
 				9B37D7B823FFAD6B004B5673 /* Info.plist */,
-				9B37D7B023FFAD6A004B5673 /* MeetRoomINTXSFT.xcdatamodeld */,
 			);
 			path = MeetRoomINTXSFT;
+			sourceTree = "<group>";
+		};
+		9B37D7BE24000ED3004B5673 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9B37D7C224011D25004B5673 /* Network */,
+				9B37D7C324011D33004B5673 /* CoreData */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9B37D7BF24000EDE004B5673 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9B37D7C624012297004B5673 /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9B37D7C124000EEF004B5673 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9B37D7AB23FFAD6A004B5673 /* LoginViewController.swift */,
+				9B37D7AD23FFAD6A004B5673 /* Auth.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9B37D7C224011D25004B5673 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				9B37D7C424011DE4004B5673 /* Network.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		9B37D7C324011D33004B5673 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				9B37D7B023FFAD6A004B5673 /* MeetRoomINTXSFT.xcdatamodeld */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +144,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9B37D7BB23FFAD6B004B5673 /* Build configuration list for PBXNativeTarget "MeetRoomINTXSFT" */;
 			buildPhases = (
+				610DDC2EB284E4BDA6C50AA9 /* [CP] Check Pods Manifest.lock */,
 				9B37D7A223FFAD6A004B5673 /* Sources */,
 				9B37D7A323FFAD6A004B5673 /* Frameworks */,
 				9B37D7A423FFAD6A004B5673 /* Resources */,
+				095025E6D1E8D910BDE70A02 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,11 +199,53 @@
 			files = (
 				9B37D7B723FFAD6B004B5673 /* LaunchScreen.storyboard in Resources */,
 				9B37D7B423FFAD6B004B5673 /* Assets.xcassets in Resources */,
-				9B37D7AF23FFAD6A004B5673 /* Main.storyboard in Resources */,
+				9B37D7AF23FFAD6A004B5673 /* Auth.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		095025E6D1E8D910BDE70A02 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MeetRoomINTXSFT/Pods-MeetRoomINTXSFT-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MeetRoomINTXSFT/Pods-MeetRoomINTXSFT-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MeetRoomINTXSFT/Pods-MeetRoomINTXSFT-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		610DDC2EB284E4BDA6C50AA9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MeetRoomINTXSFT-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9B37D7A223FFAD6A004B5673 /* Sources */ = {
@@ -139,7 +253,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B37D7B223FFAD6A004B5673 /* MeetRoomINTXSFT.xcdatamodeld in Sources */,
-				9B37D7AC23FFAD6A004B5673 /* ViewController.swift in Sources */,
+				9B37D7AC23FFAD6A004B5673 /* LoginViewController.swift in Sources */,
+				9B37D7C524011DE4004B5673 /* Network.swift in Sources */,
+				9B37D7C724012297004B5673 /* LoginViewModel.swift in Sources */,
 				9B37D7AA23FFAD6A004B5673 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,12 +263,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		9B37D7AD23FFAD6A004B5673 /* Main.storyboard */ = {
+		9B37D7AD23FFAD6A004B5673 /* Auth.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				9B37D7AE23FFAD6A004B5673 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Auth.storyboard;
 			sourceTree = "<group>";
 		};
 		9B37D7B523FFAD6B004B5673 /* LaunchScreen.storyboard */ = {
@@ -284,6 +400,7 @@
 		};
 		9B37D7BC23FFAD6B004B5673 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60E4F079870C76B531E922CA /* Pods-MeetRoomINTXSFT.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -302,6 +419,7 @@
 		};
 		9B37D7BD23FFAD6B004B5673 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D653AEF01EB18EFDC609DCAC /* Pods-MeetRoomINTXSFT.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
