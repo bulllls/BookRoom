@@ -16,6 +16,7 @@
 		9B37D7B723FFAD6B004B5673 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B37D7B523FFAD6B004B5673 /* LaunchScreen.storyboard */; };
 		9B37D7C524011DE4004B5673 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B37D7C424011DE4004B5673 /* Network.swift */; };
 		9B37D7C724012297004B5673 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B37D7C624012297004B5673 /* LoginViewModel.swift */; };
+		9B52182D240161F20029BFD2 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B52182C240161F20029BFD2 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		9B37D7B823FFAD6B004B5673 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B37D7C424011DE4004B5673 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		9B37D7C624012297004B5673 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		9B52182C240161F20029BFD2 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		D653AEF01EB18EFDC609DCAC /* Pods-MeetRoomINTXSFT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeetRoomINTXSFT.release.xcconfig"; path = "Target Support Files/Pods-MeetRoomINTXSFT/Pods-MeetRoomINTXSFT.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,6 +102,7 @@
 			children = (
 				9B37D7C224011D25004B5673 /* Network */,
 				9B37D7C324011D33004B5673 /* CoreData */,
+				9B52182C240161F20029BFD2 /* Model.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 				9B37D7B223FFAD6A004B5673 /* MeetRoomINTXSFT.xcdatamodeld in Sources */,
 				9B37D7AC23FFAD6A004B5673 /* LoginViewController.swift in Sources */,
 				9B37D7C524011DE4004B5673 /* Network.swift in Sources */,
+				9B52182D240161F20029BFD2 /* Model.swift in Sources */,
 				9B37D7C724012297004B5673 /* LoginViewModel.swift in Sources */,
 				9B37D7AA23FFAD6A004B5673 /* AppDelegate.swift in Sources */,
 			);
