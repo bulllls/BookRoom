@@ -17,6 +17,9 @@
 		9B37D7C524011DE4004B5673 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B37D7C424011DE4004B5673 /* Network.swift */; };
 		9B37D7C724012297004B5673 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B37D7C624012297004B5673 /* LoginViewModel.swift */; };
 		9B52182D240161F20029BFD2 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B52182C240161F20029BFD2 /* Model.swift */; };
+		9B52182F240168680029BFD2 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B52182E240168680029BFD2 /* Home.storyboard */; };
+		9B52183124016D520029BFD2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B52183024016D520029BFD2 /* HomeViewController.swift */; };
+		9B521833240170A50029BFD2 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B521832240170A50029BFD2 /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +36,9 @@
 		9B37D7C424011DE4004B5673 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		9B37D7C624012297004B5673 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		9B52182C240161F20029BFD2 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		9B52182E240168680029BFD2 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		9B52183024016D520029BFD2 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		9B521832240170A50029BFD2 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		D653AEF01EB18EFDC609DCAC /* Pods-MeetRoomINTXSFT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeetRoomINTXSFT.release.xcconfig"; path = "Target Support Files/Pods-MeetRoomINTXSFT/Pods-MeetRoomINTXSFT.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,9 +106,9 @@
 		9B37D7BE24000ED3004B5673 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				9B52182C240161F20029BFD2 /* Model.swift */,
 				9B37D7C224011D25004B5673 /* Network */,
 				9B37D7C324011D33004B5673 /* CoreData */,
-				9B52182C240161F20029BFD2 /* Model.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -111,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				9B37D7C624012297004B5673 /* LoginViewModel.swift */,
+				9B521832240170A50029BFD2 /* HomeViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -120,6 +127,8 @@
 			children = (
 				9B37D7AB23FFAD6A004B5673 /* LoginViewController.swift */,
 				9B37D7AD23FFAD6A004B5673 /* Auth.storyboard */,
+				9B52183024016D520029BFD2 /* HomeViewController.swift */,
+				9B52182E240168680029BFD2 /* Home.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -203,6 +212,7 @@
 				9B37D7B723FFAD6B004B5673 /* LaunchScreen.storyboard in Resources */,
 				9B37D7B423FFAD6B004B5673 /* Assets.xcassets in Resources */,
 				9B37D7AF23FFAD6A004B5673 /* Auth.storyboard in Resources */,
+				9B52182F240168680029BFD2 /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,8 +268,10 @@
 				9B37D7B223FFAD6A004B5673 /* MeetRoomINTXSFT.xcdatamodeld in Sources */,
 				9B37D7AC23FFAD6A004B5673 /* LoginViewController.swift in Sources */,
 				9B37D7C524011DE4004B5673 /* Network.swift in Sources */,
+				9B521833240170A50029BFD2 /* HomeViewModel.swift in Sources */,
 				9B52182D240161F20029BFD2 /* Model.swift in Sources */,
 				9B37D7C724012297004B5673 /* LoginViewModel.swift in Sources */,
+				9B52183124016D520029BFD2 /* HomeViewController.swift in Sources */,
 				9B37D7AA23FFAD6A004B5673 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

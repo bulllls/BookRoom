@@ -28,6 +28,8 @@ class LoginViewController: UIViewController {
 
 extension LoginViewController: SFSafariViewControllerDelegate {
     func safariViewControllerDidFinish(_ controller: SFSafariViewController) {
+        guard let vc = HomeViewController.storyboardInstance() else { return }
+        present(vc, animated: true, completion: nil)
         dismiss(animated: true, completion: nil)
     }
 }
