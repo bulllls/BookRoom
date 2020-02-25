@@ -23,6 +23,7 @@
 		9B86546D240544C70055ACAF /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B86546C240544C70055ACAF /* Profile.storyboard */; };
 		9B86546F240544FC0055ACAF /* List.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B86546E240544FC0055ACAF /* List.storyboard */; };
 		9B86547124054E830055ACAF /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B86547024054E830055ACAF /* ProfileViewController.swift */; };
+		9B865473240550C20055ACAF /* json.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B865472240550C20055ACAF /* json.swift */; };
 		9B9C11672403B44E004A314B /* FilterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9C11662403B44E004A314B /* FilterViewModel.swift */; };
 		9B9C11692403B502004A314B /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9C11682403B502004A314B /* FilterViewController.swift */; };
 		9B9C116B2403CFB6004A314B /* Result.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B9C116A2403CFB6004A314B /* Result.storyboard */; };
@@ -50,6 +51,7 @@
 		9B86546C240544C70055ACAF /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		9B86546E240544FC0055ACAF /* List.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = List.storyboard; sourceTree = "<group>"; };
 		9B86547024054E830055ACAF /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		9B865472240550C20055ACAF /* json.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = json.swift; sourceTree = "<group>"; };
 		9B9C11662403B44E004A314B /* FilterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewModel.swift; sourceTree = "<group>"; };
 		9B9C11682403B502004A314B /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
 		9B9C116A2403CFB6004A314B /* Result.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Result.storyboard; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				9B52182C240161F20029BFD2 /* Model.swift */,
+				9B865472240550C20055ACAF /* json.swift */,
 				9B37D7C224011D25004B5673 /* Network */,
 				9B37D7C324011D33004B5673 /* CoreData */,
 			);
@@ -301,6 +304,7 @@
 				9B52182D240161F20029BFD2 /* Model.swift in Sources */,
 				9B86547124054E830055ACAF /* ProfileViewController.swift in Sources */,
 				9B37D7C724012297004B5673 /* LoginViewModel.swift in Sources */,
+				9B865473240550C20055ACAF /* json.swift in Sources */,
 				9B9C11672403B44E004A314B /* FilterViewModel.swift in Sources */,
 				9B9C116F2403D041004A314B /* SearchResultViewController.swift in Sources */,
 				9B52183124016D520029BFD2 /* HomeViewController.swift in Sources */,
