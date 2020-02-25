@@ -22,12 +22,12 @@
 		9B521833240170A50029BFD2 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B521832240170A50029BFD2 /* HomeViewModel.swift */; };
 		9B86546D240544C70055ACAF /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B86546C240544C70055ACAF /* Profile.storyboard */; };
 		9B86546F240544FC0055ACAF /* List.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B86546E240544FC0055ACAF /* List.storyboard */; };
+		9B86547124054E830055ACAF /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B86547024054E830055ACAF /* ProfileViewController.swift */; };
 		9B9C11672403B44E004A314B /* FilterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9C11662403B44E004A314B /* FilterViewModel.swift */; };
 		9B9C11692403B502004A314B /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9C11682403B502004A314B /* FilterViewController.swift */; };
 		9B9C116B2403CFB6004A314B /* Result.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B9C116A2403CFB6004A314B /* Result.storyboard */; };
 		9B9C116F2403D041004A314B /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9C116E2403D041004A314B /* SearchResultViewController.swift */; };
 		9B9C117124054195004A314B /* Filter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B9C117024054195004A314B /* Filter.storyboard */; };
-		F354CA4924054B6000A5ED4A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F354CA4824054B6000A5ED4A /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,13 +49,13 @@
 		9B521832240170A50029BFD2 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		9B86546C240544C70055ACAF /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		9B86546E240544FC0055ACAF /* List.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = List.storyboard; sourceTree = "<group>"; };
+		9B86547024054E830055ACAF /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		9B9C11662403B44E004A314B /* FilterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewModel.swift; sourceTree = "<group>"; };
 		9B9C11682403B502004A314B /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
 		9B9C116A2403CFB6004A314B /* Result.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Result.storyboard; sourceTree = "<group>"; };
 		9B9C116E2403D041004A314B /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
 		9B9C117024054195004A314B /* Filter.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Filter.storyboard; sourceTree = "<group>"; };
 		D653AEF01EB18EFDC609DCAC /* Pods-MeetRoomINTXSFT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeetRoomINTXSFT.release.xcconfig"; path = "Target Support Files/Pods-MeetRoomINTXSFT/Pods-MeetRoomINTXSFT.release.xcconfig"; sourceTree = "<group>"; };
-		F354CA4824054B6000A5ED4A /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = "../../../../Downloads/Telegram Desktop/ProfileViewController.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,13 +146,13 @@
 				9B9C11682403B502004A314B /* FilterViewController.swift */,
 				9B52183024016D520029BFD2 /* HomeViewController.swift */,
 				9B9C116E2403D041004A314B /* SearchResultViewController.swift */,
-				F354CA4824054B6000A5ED4A /* ProfileViewController.swift */,
 				9B37D7AD23FFAD6A004B5673 /* Auth.storyboard */,
 				9B52182E240168680029BFD2 /* Home.storyboard */,
 				9B9C116A2403CFB6004A314B /* Result.storyboard */,
 				9B9C117024054195004A314B /* Filter.storyboard */,
 				9B86546C240544C70055ACAF /* Profile.storyboard */,
 				9B86546E240544FC0055ACAF /* List.storyboard */,
+				9B86547024054E830055ACAF /* ProfileViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -299,7 +299,7 @@
 				9B37D7C524011DE4004B5673 /* Network.swift in Sources */,
 				9B521833240170A50029BFD2 /* HomeViewModel.swift in Sources */,
 				9B52182D240161F20029BFD2 /* Model.swift in Sources */,
-				F354CA4924054B6000A5ED4A /* ProfileViewController.swift in Sources */,
+				9B86547124054E830055ACAF /* ProfileViewController.swift in Sources */,
 				9B37D7C724012297004B5673 /* LoginViewModel.swift in Sources */,
 				9B9C11672403B44E004A314B /* FilterViewModel.swift in Sources */,
 				9B9C116F2403D041004A314B /* SearchResultViewController.swift in Sources */,
