@@ -8,13 +8,13 @@
 
 import Foundation
 
-struct Person {
+struct Person: Codable {
     var name: String
     var email: String
     var phone: String?
 }
 
-struct Equipment {
+struct Equipment: Codable {
     var tableCount: Int
     var chairCount: Int
     var board: Bool
@@ -24,13 +24,14 @@ struct Equipment {
     var computer: Bool
 }
 
-struct Room {
-    var date: Date
-    var equipment: Equipment
-    var capacityPerson: Int
+struct Room: Codable {
+    var id: String
+    var date: String
+    var equipment: Equipment?
+    var capacityPerson: String
     var owner: Person?
-    var isBooked: Bool
-    var image: [Data]?
+    var isBooked: String
+    var image: String
 }
 
 struct BooTime {
