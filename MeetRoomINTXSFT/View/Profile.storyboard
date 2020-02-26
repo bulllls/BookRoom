@@ -218,11 +218,11 @@
             </objects>
             <point key="canvasLocation" x="1826" y="761"/>
         </scene>
-        <!--Profile-->
+        <!--Профиль-->
         <scene sceneID="OZC-1Q-pyn">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Fp9-lg-3J5" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Profile" image="user" id="03s-ZT-miD"/>
+                    <tabBarItem key="tabBarItem" title="Профиль" image="user" id="03s-ZT-miD"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9sH-yk-cOe">
@@ -240,6 +240,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="user" width="42.666667938232422" height="42.666667938232422"/>
+        <image name="user" width="32" height="32"/>
     </resources>
 </document>
