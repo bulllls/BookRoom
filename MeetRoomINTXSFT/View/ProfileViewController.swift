@@ -25,7 +25,7 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var currentBookingTableView: UITableView!
     @IBOutlet weak var bookingHistoryTableView: UITableView!
 
-    let font = UIFont(name: "Menlo Regular", size: 13)
+//    let font = UIFont(name: "Menlo Regular", size: 13)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,10 +56,11 @@ extension ProfileViewController: UITableViewDataSource {
         } else {
                 let cell = tableView.dequeueReusableCell(withIdentifier: "BookingHistoryCell", for: indexPath as IndexPath) as UITableViewCell
                 cell.textLabel?.text = "Room №4 28.02.2019 11:10"
-            cell.textLabel?.font = font
+//            cell.textLabel?.font = font
         return cell
     }
         }
+    
     
 }
 
@@ -81,6 +82,7 @@ extension ProfileViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
         if tableView == self.currentBookingTableView {
         self.performSegue(withIdentifier: "goToCurrentBookingRoomSegue", sender: indexPath)
         }
