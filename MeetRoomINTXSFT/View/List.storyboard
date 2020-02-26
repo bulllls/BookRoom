@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kiR-xo-eBF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kiR-xo-eBF">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -130,7 +130,7 @@
             </objects>
             <point key="canvasLocation" x="2836" y="319.79010494752629"/>
         </scene>
-        <!--Rooms-->
+        <!--List Table View Controller-->
         <scene sceneID="Mp8-Sy-QoV">
             <objects>
                 <tableViewController clearsSelectionOnViewWillAppear="NO" id="wgm-Kr-5HR" customClass="ListTableViewController" customModule="MeetRoomINTXSFT" customModuleProvider="target" sceneMemberID="viewController">
@@ -180,7 +180,6 @@
                             <outlet property="delegate" destination="wgm-Kr-5HR" id="6hy-x4-uct"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Rooms" image="circle.grid.hex" catalog="system" id="SgV-gl-x4C"/>
                     <navigationItem key="navigationItem" id="3cC-xt-8xs"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -207,10 +206,11 @@
             </objects>
             <point key="canvasLocation" x="1360.8" y="-450.22488755622192"/>
         </scene>
-        <!--Split View Controller-->
+        <!--Item-->
         <scene sceneID="E8S-bi-vFo">
             <objects>
                 <splitViewController id="kiR-xo-eBF" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" image="allList" id="ype-U8-Gsy"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <segue destination="iGX-vx-PF5" kind="relationship" relationship="masterViewController" id="sQz-eW-hT9"/>
@@ -241,7 +241,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="circle.grid.hex" catalog="system" width="64" height="56"/>
+        <image name="allList" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="c0a-pK-yRe"/>
