@@ -1,4 +1,33 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15508" systemVersion="18G95" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="EquipmentDB" representedClassName="EquipmentDB" syncable="YES">
+        <attribute name="board" optional="YES" attributeType="String"/>
+        <attribute name="chairCount" optional="YES" attributeType="String"/>
+        <attribute name="computer" optional="YES" attributeType="String"/>
+        <attribute name="conditioning" optional="YES" attributeType="String"/>
+        <attribute name="printer" optional="YES" attributeType="String"/>
+        <attribute name="tableCount" optional="YES" attributeType="String"/>
+        <attribute name="tV" optional="YES" attributeType="String"/>
+        <relationship name="room" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="RoomDB" inverseName="equipment" inverseEntity="RoomDB"/>
+    </entity>
+    <entity name="PersonDB" representedClassName="PersonDB" syncable="YES">
+        <attribute name="email" attributeType="String"/>
+        <attribute name="name" attributeType="String"/>
+        <attribute name="phone" optional="YES" attributeType="String"/>
+        <relationship name="room" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="RoomDB" inverseName="owner" inverseEntity="RoomDB"/>
+    </entity>
+    <entity name="RoomDB" representedClassName="RoomDB" syncable="YES">
+        <attribute name="capacityPerson" optional="YES" attributeType="String"/>
+        <attribute name="date" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="image" optional="YES" attributeType="String"/>
+        <attribute name="isBooked" optional="YES" attributeType="String"/>
+        <relationship name="equipment" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="EquipmentDB" inverseName="room" inverseEntity="EquipmentDB"/>
+        <relationship name="owner" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PersonDB" inverseName="room" inverseEntity="PersonDB"/>
+    </entity>
+    <elements>
+        <element name="EquipmentDB" positionX="-410.34375" positionY="-120.03515625" width="128" height="163"/>
+        <element name="PersonDB" positionX="-412.8203125" positionY="54.06640625" width="136.37890625" height="103"/>
+        <element name="RoomDB" positionX="-582.47265625" positionY="9.08203125" width="128" height="148"/>
+    </elements>
 </model>

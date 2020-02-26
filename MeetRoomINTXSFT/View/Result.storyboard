@@ -30,10 +30,14 @@
                             <outlet property="delegate" destination="UzK-6y-ALc" id="xk4-fn-cge"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="RkI-Lb-3fj"/>
+                    <connections>
+                        <outlet property="table" destination="Uvi-26-LYq" id="mAb-YE-rSZ"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dcL-A7-ISa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="78" y="65"/>
+            <point key="canvasLocation" x="986.95652173913049" y="64.955357142857139"/>
         </scene>
     </scenes>
 </document>
