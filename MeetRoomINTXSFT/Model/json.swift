@@ -41,14 +41,14 @@ class Json {
 
     static let jsonEquipment = """
         {
-            "id": 255,
-            "tableCount": 2,
-            "chairCount": 10,
-            "board": true,
-            "tV": false,
-            "printer": true,
-            "conditioning": false,
-            "computer": true
+            "id": "255",
+            "tableCount": "2",
+            "chairCount": "10",
+            "board": "true",
+            "tV": "false",
+            "printer": "true",
+            "conditioning": "false",
+            "computer": "true"
         }
     """
 
