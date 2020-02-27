@@ -220,14 +220,14 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="account" translatesAutoresizingMaskIntoConstraints="NO" id="B15-ge-wfZ">
-                                                <rect key="frame" x="132" y="10" width="150" height="150"/>
+                                                <rect key="frame" x="132" y="40" width="150" height="150"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="150" id="SWq-1t-1ed"/>
                                                     <constraint firstAttribute="width" constant="150" id="vft-IZ-Lbj"/>
                                                 </constraints>
                                             </imageView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="pmZ-PH-89s">
-                                                <rect key="frame" x="10" y="180" width="394" height="100"/>
+                                                <rect key="frame" x="10" y="210" width="394" height="100"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleAspectFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="9aF-T2-WOd">
                                                         <rect key="frame" x="134" y="0.0" width="126" height="28.666666666666668"/>
@@ -283,7 +283,7 @@
                                                 </subviews>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dw9-7G-oZL">
-                                                <rect key="frame" x="117.33333333333333" y="304" width="179.66666666666669" height="23"/>
+                                                <rect key="frame" x="117.33333333333333" y="334" width="179.66666666666669" height="23"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="179.66666666666669" id="6pG-Pd-1zR"/>
                                                     <constraint firstAttribute="height" constant="23" id="b3R-j5-o1O"/>
@@ -296,7 +296,7 @@
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e8e-pe-4g0">
-                                                <rect key="frame" x="119.33333333333333" y="347" width="175.66666666666669" height="32"/>
+                                                <rect key="frame" x="119.33333333333333" y="377" width="175.66666666666669" height="32"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="32" id="QPN-6e-6dH"/>
                                                     <constraint firstAttribute="width" constant="175.66666666666669" id="kOe-qa-9PR"/>
@@ -309,7 +309,7 @@
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="e8e-pe-4g0" firstAttribute="top" secondItem="dw9-7G-oZL" secondAttribute="bottom" constant="20" id="B2b-gu-NWB"/>
-                                            <constraint firstItem="B15-ge-wfZ" firstAttribute="top" secondItem="rSu-Fa-qf2" secondAttribute="top" constant="10" id="CAN-SW-CAt"/>
+                                            <constraint firstItem="B15-ge-wfZ" firstAttribute="top" secondItem="rSu-Fa-qf2" secondAttribute="top" constant="40" id="CAN-SW-CAt"/>
                                             <constraint firstItem="pmZ-PH-89s" firstAttribute="top" secondItem="B15-ge-wfZ" secondAttribute="bottom" constant="20" id="EHl-0o-I8j"/>
                                             <constraint firstAttribute="height" constant="1000" id="GzQ-jq-GNg"/>
                                             <constraint firstItem="B15-ge-wfZ" firstAttribute="centerX" secondItem="rSu-Fa-qf2" secondAttribute="centerX" id="IW6-FN-xp1"/>
