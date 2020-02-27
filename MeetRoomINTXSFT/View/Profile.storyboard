@@ -219,7 +219,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rSu-Fa-qf2">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="B15-ge-wfZ">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="account" translatesAutoresizingMaskIntoConstraints="NO" id="B15-ge-wfZ">
                                                 <rect key="frame" x="132" y="10" width="150" height="150"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="150" id="SWq-1t-1ed"/>
@@ -410,6 +410,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="account" width="256" height="256"/>
         <image name="arrow-next" width="7.5" height="13"/>
         <image name="bg" width="640" height="1136"/>
         <image name="user" width="32" height="32"/>
