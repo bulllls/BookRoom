@@ -7,22 +7,34 @@
 //
 
 import UIKit
+import CoreData
 
 class ListTableViewController: UITableViewController {
+    
+    var dataBaseManager = DataBase()
 
     
     @IBOutlet var listOfRooms: UITableView!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+    override func viewWillAppear(_ animated: Bool) {
+        try? dataBaseManager.frc.performFetch()
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        dataBaseManager.frc.delegate = self
+        loadRoomData()
+
+    }
+    
+    @objc func loadRoomData() {
+        let networkManager = Network()
+        networkManager.getAllRooms { [weak self] (rooms) in
+            self?.dataBaseManager.saveNewRoom(rooms: rooms)
+        }
+        print("test listTableTap")
+    }
+
 
 
     // MARK: - Table view data source
@@ -33,22 +45,36 @@ class ListTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 3
+        return dataBaseManager.frc.sections?[section].numberOfObjects ?? 0
+
     }
-
-
+    
+    /// разрешаю редактировать ячейку
+    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+      return true
+    }
+    /// удаляю выбранную ячейку
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        let object = dataBaseManager.frc.object(at: indexPath)
+        dataBaseManager.frc.managedObjectContext.delete(object)
+        try? dataBaseManager.frc.managedObjectContext.save()
+    }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "descriptionRoomTableViewCell", for: indexPath)
-        cell.textLabel?.text = "Room №"
+        let object = dataBaseManager.frc.object(at: indexPath) as? RoomDB
+        cell.textLabel?.text = object?.id
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.performSegue(withIdentifier: "goToRoomDescription", sender: indexPath)
-
+        tableView.deselectRow(at: indexPath, animated: true)
     }
+    
+//    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        self.performSegue(withIdentifier: "goToRoomDescription", sender: indexPath)
+//
+//    }
 
 
     /*
@@ -98,7 +124,31 @@ class ListTableViewController: UITableViewController {
 
 }
 
-
+extension ListTableViewController: NSFetchedResultsControllerDelegate {
+    ///показываю что начато редактирование ячейки
+    func controllerWillChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
+        listOfRooms.beginUpdates()
+    }
+    ///определяет что именно хочу сделать с ячейкой
+    func controller(_ controller: NSFetchedResultsController<NSFetchRequestResult>, didChange anObject: Any, at indexPath: IndexPath?, for type: NSFetchedResultsChangeType, newIndexPath: IndexPath?) {
+      switch type {
+      case .insert:
+        listOfRooms.insertRows(at: [indexPath ?? newIndexPath ?? IndexPath(row: 0, section: 0)], with: .fade)
+      case .delete:
+        listOfRooms.deleteRows(at: [indexPath!], with: .fade)
+      case .move:
+        listOfRooms.moveRow(at: indexPath!, to: newIndexPath!)
+      case .update:
+        listOfRooms.reloadRows(at: [indexPath!], with: .fade)
+      @unknown default:
+          fatalError()
+      }
+    }
+    /// показываю что редактировние ячейки окончено
+    func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
+        listOfRooms.endUpdates()
+    }
+}
 
 
 
