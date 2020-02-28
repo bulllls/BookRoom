@@ -40,6 +40,7 @@
 		9BA86AA524091A6200A8D293 /* DetailResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA86AA424091A6200A8D293 /* DetailResultViewController.swift */; };
 		F319F9C92406537A002B1796 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F319F9C82406537A002B1796 /* ListTableViewController.swift */; };
 		F319F9CF240699C4002B1796 /* DescriptionRoomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F319F9CE240699C4002B1796 /* DescriptionRoomTableViewCell.swift */; };
+		F398B96D24094F2A00BB6A05 /* BookingHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F398B96C24094F2A00BB6A05 /* BookingHistoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,6 +82,7 @@
 		F319F9C82406537A002B1796 /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
 		F319F9CA2406576A002B1796 /* RoomEquipmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomEquipmentViewController.swift; sourceTree = "<group>"; };
 		F319F9CE240699C4002B1796 /* DescriptionRoomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionRoomTableViewCell.swift; sourceTree = "<group>"; };
+		F398B96C24094F2A00BB6A05 /* BookingHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingHistoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +179,7 @@
 				9B86547024054E830055ACAF /* ProfileViewController.swift */,
 				F319F9C82406537A002B1796 /* ListTableViewController.swift */,
 				F319F9CA2406576A002B1796 /* RoomEquipmentViewController.swift */,
+				F398B96C24094F2A00BB6A05 /* BookingHistoryViewController.swift */,
 				9BA86AA424091A6200A8D293 /* DetailResultViewController.swift */,
 				9B37D7AD23FFAD6A004B5673 /* Auth.storyboard */,
 				9B52182E240168680029BFD2 /* Home.storyboard */,
@@ -361,6 +364,7 @@
 				9B9C11672403B44E004A314B /* FilterViewModel.swift in Sources */,
 				9B9C116F2403D041004A314B /* SearchResultViewController.swift in Sources */,
 				9B52183124016D520029BFD2 /* HomeViewController.swift in Sources */,
+				F398B96D24094F2A00BB6A05 /* BookingHistoryViewController.swift in Sources */,
 				9B37D7AA23FFAD6A004B5673 /* AppDelegate.swift in Sources */,
 				F319F9C92406537A002B1796 /* ListTableViewController.swift in Sources */,
 			);
