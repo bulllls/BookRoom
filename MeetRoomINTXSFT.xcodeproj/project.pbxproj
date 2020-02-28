@@ -17,6 +17,7 @@
 		9B37D7C524011DE4004B5673 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B37D7C424011DE4004B5673 /* Network.swift */; };
 		9B37D7C724012297004B5673 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B37D7C624012297004B5673 /* LoginViewModel.swift */; };
 		9B3ED3AD240950E400CC33C2 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3ED3AC240950E400CC33C2 /* ListViewModel.swift */; };
+		9B3ED3AF2409655500CC33C2 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3ED3AE2409655500CC33C2 /* ProfileViewModel.swift */; };
 		9B52182D240161F20029BFD2 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B52182C240161F20029BFD2 /* Model.swift */; };
 		9B52182F240168680029BFD2 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B52182E240168680029BFD2 /* Home.storyboard */; };
 		9B52183124016D520029BFD2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B52183024016D520029BFD2 /* HomeViewController.swift */; };
@@ -58,6 +59,7 @@
 		9B37D7C424011DE4004B5673 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		9B37D7C624012297004B5673 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		9B3ED3AC240950E400CC33C2 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		9B3ED3AE2409655500CC33C2 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		9B52182C240161F20029BFD2 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		9B52182E240168680029BFD2 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		9B52183024016D520029BFD2 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 				9B9C11662403B44E004A314B /* FilterViewModel.swift */,
 				9BA86AA22408E81B00A8D293 /* SearchResultViewModel.swift */,
 				9B3ED3AC240950E400CC33C2 /* ListViewModel.swift */,
+				9B3ED3AE2409655500CC33C2 /* ProfileViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -348,6 +351,7 @@
 				9B9C11692403B502004A314B /* FilterViewController.swift in Sources */,
 				F319F9CF240699C4002B1796 /* DescriptionRoomTableViewCell.swift in Sources */,
 				9B37D7B223FFAD6A004B5673 /* MeetRoomINTXSFT.xcdatamodeld in Sources */,
+				9B3ED3AF2409655500CC33C2 /* ProfileViewModel.swift in Sources */,
 				9B86549324065AF90055ACAF /* RoomDB+CoreDataProperties.swift in Sources */,
 				9B37D7AC23FFAD6A004B5673 /* LoginViewController.swift in Sources */,
 				9B37D7C524011DE4004B5673 /* Network.swift in Sources */,

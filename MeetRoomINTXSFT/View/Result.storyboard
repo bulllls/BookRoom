@@ -54,7 +54,7 @@
         <!--Detail Result View Controller-->
         <scene sceneID="maX-hG-uUk">
             <objects>
-                <viewController storyboardIdentifier="detailResultStoryboard" modalPresentationStyle="currentContext" id="6Fy-MB-hsb" customClass="DetailResultViewController" customModule="MeetRoomINTXSFT" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailResultViewController" modalPresentationStyle="currentContext" id="6Fy-MB-hsb" customClass="DetailResultViewController" customModule="MeetRoomINTXSFT" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yNa-Vh-THE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

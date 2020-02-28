@@ -48,8 +48,8 @@ class SearchResultViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         let newStoryBoard : UIStoryboard = UIStoryboard(name: "Result", bundle: nil)
-        let vc = newStoryBoard.instantiateViewController(withIdentifier: "detailResultStoryboard")
-        navigationController?.pushViewController(vc, animated: false)
+        let vc = newStoryBoard.instantiateViewController(withIdentifier: "DetailResultViewController")
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
 }
