@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="81" translatesAutoresizingMaskIntoConstraints="NO" id="l0i-3S-zQf">
-                                <rect key="frame" x="30" y="138" width="220" height="287.5"/>
+                                <rect key="frame" x="30" y="94" width="220" height="287.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="RV6-1u-xTl">
                                         <rect key="frame" x="0.0" y="0.0" width="97" height="287.5"/>
@@ -137,7 +137,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="b8E-9d-MVI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="List of meeting rooms with description" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1bB-Or-dPf">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="81"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -147,28 +147,12 @@
                         </label>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="descriptionRoomTableViewCell" id="X0y-Q5-wSe" customClass="DescriptionRoomTableViewCell" customModule="MeetRoomINTXSFT" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="109" width="375" height="32"/>
+                                <rect key="frame" x="0.0" y="109" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="X0y-Q5-wSe" id="DBb-gN-xKU">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="32"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zs8-sM-Gc6">
-                                            <rect key="frame" x="16" y="11" width="343" height="10"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="10" id="OtP-FW-9TJ" userLabel="height = 30"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstAttribute="bottomMargin" secondItem="Zs8-sM-Gc6" secondAttribute="bottom" id="05y-em-Yty"/>
-                                        <constraint firstItem="Zs8-sM-Gc6" firstAttribute="leading" secondItem="DBb-gN-xKU" secondAttribute="leadingMargin" id="0Gt-x5-ICe"/>
-                                        <constraint firstItem="Zs8-sM-Gc6" firstAttribute="top" secondItem="DBb-gN-xKU" secondAttribute="topMargin" id="g0m-38-pny"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="Zs8-sM-Gc6" secondAttribute="trailing" id="ya3-n0-798"/>
-                                    </constraints>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </tableViewCellContentView>
                                 <connections>
                                     <segue destination="IIE-jc-2DZ" kind="showDetail" identifier="goToRoomDescription" id="90V-MU-VPt"/>
@@ -335,6 +319,6 @@
         <image name="bg" width="640" height="1136"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="c0a-pK-yRe"/>
+        <segue reference="90V-MU-VPt"/>
     </inferredMetricsTieBreakers>
 </document>

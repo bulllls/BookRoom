@@ -12,7 +12,7 @@ import CoreData
 class ListTableViewController: UITableViewController, UISplitViewControllerDelegate {
     
     var dataBaseManager = DataBase()
-
+    var viewModel = HomeViewModel()
     @IBOutlet var listOfRooms: UITableView!
     
     override func viewWillAppear(_ animated: Bool) {
@@ -22,6 +22,7 @@ class ListTableViewController: UITableViewController, UISplitViewControllerDeleg
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        viewModel.addBgImage(from: listOfRooms)
         switch UIDevice.current.userInterfaceIdiom {
         case .phone:
             splitViewController?.delegate = self
@@ -72,6 +73,7 @@ class ListTableViewController: UITableViewController, UISplitViewControllerDeleg
         let cell = tableView.dequeueReusableCell(withIdentifier: "descriptionRoomTableViewCell", for: indexPath)
         let object = dataBaseManager.frc.object(at: indexPath) as? RoomDB
         cell.textLabel?.text = object?.id
+        cell.backgroundColor = .none
         return cell
     }
     
