@@ -19,19 +19,19 @@ class Json {
                 "image": "Date"
             }, {
                 "id": "456",
-                "date": "20200225",
+                "date": "20210716",
                 "capacityPerson": "12",
                 "isBooked": "false",
                 "image": "Date"
             }, {
                 "id": "789",
-                "date": "20200225",
+                "date": "20200408",
                 "capacityPerson": "5",
                 "isBooked": "false",
                 "image": "Date"
             },  {
                "id": "321",
-               "date": "20200225",
+               "date": "20220222",
                "capacityPerson": "31",
                "isBooked": "true",
                "image": "Date"

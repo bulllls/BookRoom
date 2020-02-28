@@ -27,7 +27,7 @@ class DataBase {
     func saveNewRoom(rooms: [Room]) {
         for room in rooms {
             let newTask = RoomDB(context: frc.managedObjectContext)
-            newTask.id = room.id
+            newTask.id = room.time
             newTask.date = room.date
             newTask.image = room.image
             newTask.isBooked = room.isBooked

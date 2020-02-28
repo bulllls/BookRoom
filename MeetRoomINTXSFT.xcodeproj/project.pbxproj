@@ -36,8 +36,9 @@
 		9B9C116B2403CFB6004A314B /* Result.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B9C116A2403CFB6004A314B /* Result.storyboard */; };
 		9B9C116F2403D041004A314B /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9C116E2403D041004A314B /* SearchResultViewController.swift */; };
 		9B9C117124054195004A314B /* Filter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B9C117024054195004A314B /* Filter.storyboard */; };
+		9BA86AA32408E81B00A8D293 /* SearchResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA86AA22408E81B00A8D293 /* SearchResultViewModel.swift */; };
+		9BA86AA524091A6200A8D293 /* DetailResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA86AA424091A6200A8D293 /* DetailResultViewController.swift */; };
 		F319F9C92406537A002B1796 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F319F9C82406537A002B1796 /* ListTableViewController.swift */; };
-		F319F9CB2406576A002B1796 /* RoomEquipmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F319F9CA2406576A002B1796 /* RoomEquipmentViewController.swift */; };
 		F319F9CF240699C4002B1796 /* DescriptionRoomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F319F9CE240699C4002B1796 /* DescriptionRoomTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +75,8 @@
 		9B9C116A2403CFB6004A314B /* Result.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Result.storyboard; sourceTree = "<group>"; };
 		9B9C116E2403D041004A314B /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
 		9B9C117024054195004A314B /* Filter.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Filter.storyboard; sourceTree = "<group>"; };
+		9BA86AA22408E81B00A8D293 /* SearchResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewModel.swift; sourceTree = "<group>"; };
+		9BA86AA424091A6200A8D293 /* DetailResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailResultViewController.swift; sourceTree = "<group>"; };
 		D653AEF01EB18EFDC609DCAC /* Pods-MeetRoomINTXSFT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeetRoomINTXSFT.release.xcconfig"; path = "Target Support Files/Pods-MeetRoomINTXSFT/Pods-MeetRoomINTXSFT.release.xcconfig"; sourceTree = "<group>"; };
 		F319F9C82406537A002B1796 /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
 		F319F9CA2406576A002B1796 /* RoomEquipmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomEquipmentViewController.swift; sourceTree = "<group>"; };
@@ -158,6 +161,7 @@
 				9B37D7C624012297004B5673 /* LoginViewModel.swift */,
 				9B521832240170A50029BFD2 /* HomeViewModel.swift */,
 				9B9C11662403B44E004A314B /* FilterViewModel.swift */,
+				9BA86AA22408E81B00A8D293 /* SearchResultViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -173,6 +177,7 @@
 				9B86547024054E830055ACAF /* ProfileViewController.swift */,
 				F319F9C82406537A002B1796 /* ListTableViewController.swift */,
 				F319F9CA2406576A002B1796 /* RoomEquipmentViewController.swift */,
+				9BA86AA424091A6200A8D293 /* DetailResultViewController.swift */,
 				9B37D7AD23FFAD6A004B5673 /* Auth.storyboard */,
 				9B52182E240168680029BFD2 /* Home.storyboard */,
 				9B9C116A2403CFB6004A314B /* Result.storyboard */,
@@ -346,9 +351,11 @@
 				9B86547124054E830055ACAF /* ProfileViewController.swift in Sources */,
 				9B86549724065AF90055ACAF /* EquipmentDB+CoreDataProperties.swift in Sources */,
 				9B86549924065E010055ACAF /* DataBase.swift in Sources */,
+				9BA86AA32408E81B00A8D293 /* SearchResultViewModel.swift in Sources */,
 				9B86549424065AF90055ACAF /* PersonDB+CoreDataClass.swift in Sources */,
 				9B86549624065AF90055ACAF /* EquipmentDB+CoreDataClass.swift in Sources */,
 				9B37D7C724012297004B5673 /* LoginViewModel.swift in Sources */,
+				9BA86AA524091A6200A8D293 /* DetailResultViewController.swift in Sources */,
 				9B86549224065AF90055ACAF /* RoomDB+CoreDataClass.swift in Sources */,
 				9B865473240550C20055ACAF /* json.swift in Sources */,
 				9B9C11672403B44E004A314B /* FilterViewModel.swift in Sources */,

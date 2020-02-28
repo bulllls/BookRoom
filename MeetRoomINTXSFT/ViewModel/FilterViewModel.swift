@@ -7,23 +7,8 @@
 //
 
 import Foundation
-import ReactiveKit
-import Bond
 
 class FilterViewModel: HomeViewModel {
-    
-    let date = Observable<Int>(0)
-    let fromTime = Observable<Int>(100)
-    let toTime = Observable<Int>(2400)
-    let person = Observable<Int>(0)
-    let isTable = Observable<Bool>(true)
-    let isChair = Observable<Bool>(true)
-    let isCooler = Observable<Bool>(false)
-    let isBoard = Observable<Bool>(false)
-    let isTv = Observable<Bool>(true)
-    let isComputer = Observable<Bool>(false)
-    let isInternet = Observable<Bool>(true)
-    let isPrinter = Observable<Bool>(true)
     
     var detailValue: DetailVulue = .date
     

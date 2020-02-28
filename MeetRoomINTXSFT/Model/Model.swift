@@ -25,13 +25,23 @@ struct Equipment: Codable {
 }
 
 struct Room: Codable {
-    var id: String
+    var time: String
     var date: String
     var equipment: Equipment?
     var capacityPerson: String
     var owner: Person?
     var isBooked: String
     var image: String
+    
+    enum CodingKeys: String, CodingKey {
+        case time = "id"
+       case date
+       case equipment
+       case capacityPerson
+       case owner
+       case isBooked
+       case image
+    }
 }
 
 struct BooTime {
