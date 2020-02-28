@@ -35,21 +35,17 @@ class ListTableViewController: UITableViewController, UISplitViewControllerDeleg
         viewModel.loadRoomData()
         listOfRooms.reloadData()
     }
-    
-
 
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModel.coreDataManager.frc.sections?[section].numberOfObjects ?? 0
-
     }
     
-    /// разрешаю редактировать ячейку
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
       return true
     }
-    /// удаляю выбранную ячейку
+    
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         let object = viewModel.coreDataManager.frc.object(at: indexPath)
         viewModel.coreDataManager.frc.managedObjectContext.delete(object)
@@ -65,6 +61,9 @@ class ListTableViewController: UITableViewController, UISplitViewControllerDeleg
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        let newStoryBoard : UIStoryboard = UIStoryboard(name: "List", bundle: nil)
+          let VC = newStoryBoard.instantiateViewController(withIdentifier: "roomEquipmentStoryboard")
+        self.show(VC, sender: Any?.self)
     }
     
     func splitViewController(_ splitViewController: UISplitViewController, collapseSecondary secondaryViewController: UIViewController, onto primaryViewController: UIViewController) -> Bool {
@@ -73,11 +72,10 @@ class ListTableViewController: UITableViewController, UISplitViewControllerDeleg
 }
 
 extension ListTableViewController: NSFetchedResultsControllerDelegate {
-    ///показываю что начато редактирование ячейки
     func controllerWillChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
         listOfRooms.beginUpdates()
     }
-    ///определяет что именно хочу сделать с ячейкой
+    
     func controller(_ controller: NSFetchedResultsController<NSFetchRequestResult>, didChange anObject: Any, at indexPath: IndexPath?, for type: NSFetchedResultsChangeType, newIndexPath: IndexPath?) {
       switch type {
       case .insert:
@@ -92,7 +90,7 @@ extension ListTableViewController: NSFetchedResultsControllerDelegate {
           fatalError()
       }
     }
-    /// показываю что редактировние ячейки окончено
+
     func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
         listOfRooms.endUpdates()
     }
