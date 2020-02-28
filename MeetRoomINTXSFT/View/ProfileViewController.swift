@@ -23,7 +23,10 @@ class ProfileViewController: UIViewController {
     
 
     
-    @IBAction func historyBookingsList(_ sender: Any) {         performSegue(withIdentifier: "goToCurrentBooking", sender: sender)
+    @IBAction func historyBookingsList(_ sender: Any) {
+        let main = UIStoryboard(name: "Profile", bundle: nil)
+        let second = main.instantiateViewController(withIdentifier: "bookingHistoryStoryboard")
+        self.present(second, animated: true, completion: nil)
     }
     
     override func viewDidLoad() {

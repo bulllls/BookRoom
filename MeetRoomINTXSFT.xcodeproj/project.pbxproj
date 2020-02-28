@@ -37,8 +37,8 @@
 		9B9C117124054195004A314B /* Filter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B9C117024054195004A314B /* Filter.storyboard */; };
 		C7E77E42574AD4098FB101FC /* libPods-MeetRoomINTXSFT.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FB5282305E0AD85090CB7D6 /* libPods-MeetRoomINTXSFT.a */; };
 		F319F9C92406537A002B1796 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F319F9C82406537A002B1796 /* ListTableViewController.swift */; };
-		F319F9D32407C34C002B1796 /* DescriptionBookingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F319F9D22407C34B002B1796 /* DescriptionBookingViewController.swift */; };
 		F319F9D52407CFC7002B1796 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F319F9D42407CFC7002B1796 /* ProfileViewModel.swift */; };
+		F3C40E0E240904970090CD71 /* BookingHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C40E0D240904970090CD71 /* BookingHistoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,8 +77,8 @@
 		D653AEF01EB18EFDC609DCAC /* Pods-MeetRoomINTXSFT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeetRoomINTXSFT.release.xcconfig"; path = "Target Support Files/Pods-MeetRoomINTXSFT/Pods-MeetRoomINTXSFT.release.xcconfig"; sourceTree = "<group>"; };
 		F319F9C82406537A002B1796 /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
 		F319F9CA2406576A002B1796 /* RoomEquipmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomEquipmentViewController.swift; sourceTree = "<group>"; };
-		F319F9D22407C34B002B1796 /* DescriptionBookingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionBookingViewController.swift; sourceTree = "<group>"; };
 		F319F9D42407CFC7002B1796 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		F3C40E0D240904970090CD71 /* BookingHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingHistoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,8 +172,8 @@
 				9B52183024016D520029BFD2 /* HomeViewController.swift */,
 				9B9C116E2403D041004A314B /* SearchResultViewController.swift */,
 				9B86547024054E830055ACAF /* ProfileViewController.swift */,
-				F319F9D22407C34B002B1796 /* DescriptionBookingViewController.swift */,
 				F319F9C82406537A002B1796 /* ListTableViewController.swift */,
+				F3C40E0D240904970090CD71 /* BookingHistoryViewController.swift */,
 				F319F9CA2406576A002B1796 /* RoomEquipmentViewController.swift */,
 				9B37D7AD23FFAD6A004B5673 /* Auth.storyboard */,
 				9B52182E240168680029BFD2 /* Home.storyboard */,
@@ -321,13 +321,13 @@
 				9B9C11692403B502004A314B /* FilterViewController.swift in Sources */,
 				9B37D7B223FFAD6A004B5673 /* MeetRoomINTXSFT.xcdatamodeld in Sources */,
 				9B86549324065AF90055ACAF /* RoomDB+CoreDataProperties.swift in Sources */,
+				F3C40E0E240904970090CD71 /* BookingHistoryViewController.swift in Sources */,
 				9B37D7AC23FFAD6A004B5673 /* LoginViewController.swift in Sources */,
 				9B37D7C524011DE4004B5673 /* Network.swift in Sources */,
 				9B521833240170A50029BFD2 /* HomeViewModel.swift in Sources */,
 				9B52182D240161F20029BFD2 /* Model.swift in Sources */,
 				9B86549524065AF90055ACAF /* PersonDB+CoreDataProperties.swift in Sources */,
 				9B86547124054E830055ACAF /* ProfileViewController.swift in Sources */,
-				F319F9D32407C34C002B1796 /* DescriptionBookingViewController.swift in Sources */,
 				9B86549724065AF90055ACAF /* EquipmentDB+CoreDataProperties.swift in Sources */,
 				9B86549924065E010055ACAF /* DataBase.swift in Sources */,
 				9B86549424065AF90055ACAF /* PersonDB+CoreDataClass.swift in Sources */,
