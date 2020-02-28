@@ -137,7 +137,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="b8E-9d-MVI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="List of meeting rooms with description" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1bB-Or-dPf">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="81"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -146,29 +146,13 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="descriptionRoomTableViewCell" id="X0y-Q5-wSe" customClass="DescriptionRoomTableViewCell" customModule="MeetRoomINTXSFT" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="109" width="375" height="32"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="X0y-Q5-wSe">
+                                <rect key="frame" x="0.0" y="109" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="X0y-Q5-wSe" id="DBb-gN-xKU">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="32"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zs8-sM-Gc6">
-                                            <rect key="frame" x="16" y="11" width="343" height="10"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="10" id="OtP-FW-9TJ" userLabel="height = 30"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstAttribute="bottomMargin" secondItem="Zs8-sM-Gc6" secondAttribute="bottom" id="05y-em-Yty"/>
-                                        <constraint firstItem="Zs8-sM-Gc6" firstAttribute="leading" secondItem="DBb-gN-xKU" secondAttribute="leadingMargin" id="0Gt-x5-ICe"/>
-                                        <constraint firstItem="Zs8-sM-Gc6" firstAttribute="top" secondItem="DBb-gN-xKU" secondAttribute="topMargin" id="g0m-38-pny"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="Zs8-sM-Gc6" secondAttribute="trailing" id="ya3-n0-798"/>
-                                    </constraints>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </tableViewCellContentView>
                                 <connections>
                                     <segue destination="IIE-jc-2DZ" kind="showDetail" identifier="goToRoomDescription" id="90V-MU-VPt"/>
@@ -266,7 +250,7 @@
             </objects>
             <point key="canvasLocation" x="924" y="1817.5412293853076"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Список переговорок-->
         <scene sceneID="9OO-ml-GSr">
             <objects>
                 <tableViewController clearsSelectionOnViewWillAppear="NO" id="ysN-Zx-agm" customClass="ListTableViewController" customModule="MeetRoomINTXSFT" customModuleProvider="target" sceneMemberID="viewController">
@@ -274,14 +258,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="sectionIndexColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="descriptionRoomTableViewCell" id="YNg-nm-gBB">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="descriptionRoomTableViewCell" id="YNg-nm-gBB" customClass="DescriptionRoomTableViewCell" customModule="MeetRoomINTXSFT" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YNg-nm-gBB" id="k86-h8-3k7">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -289,7 +275,7 @@
                             <outlet property="delegate" destination="ysN-Zx-agm" id="jFE-dL-EMP"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="nmy-ve-h2m"/>
+                    <navigationItem key="navigationItem" title="Список переговорок" id="nmy-ve-h2m"/>
                     <connections>
                         <outlet property="listOfRooms" destination="oLn-BK-h75" id="9w8-SH-OId"/>
                     </connections>

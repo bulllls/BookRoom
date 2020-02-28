@@ -16,6 +16,7 @@
 		9B37D7B723FFAD6B004B5673 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B37D7B523FFAD6B004B5673 /* LaunchScreen.storyboard */; };
 		9B37D7C524011DE4004B5673 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B37D7C424011DE4004B5673 /* Network.swift */; };
 		9B37D7C724012297004B5673 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B37D7C624012297004B5673 /* LoginViewModel.swift */; };
+		9B3ED3AD240950E400CC33C2 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3ED3AC240950E400CC33C2 /* ListViewModel.swift */; };
 		9B52182D240161F20029BFD2 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B52182C240161F20029BFD2 /* Model.swift */; };
 		9B52182F240168680029BFD2 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B52182E240168680029BFD2 /* Home.storyboard */; };
 		9B52183124016D520029BFD2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B52183024016D520029BFD2 /* HomeViewController.swift */; };
@@ -56,6 +57,7 @@
 		9B37D7B823FFAD6B004B5673 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B37D7C424011DE4004B5673 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		9B37D7C624012297004B5673 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		9B3ED3AC240950E400CC33C2 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 		9B52182C240161F20029BFD2 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		9B52182E240168680029BFD2 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		9B52183024016D520029BFD2 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 				9B521832240170A50029BFD2 /* HomeViewModel.swift */,
 				9B9C11662403B44E004A314B /* FilterViewModel.swift */,
 				9BA86AA22408E81B00A8D293 /* SearchResultViewModel.swift */,
+				9B3ED3AC240950E400CC33C2 /* ListViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -357,6 +360,7 @@
 				9BA86AA32408E81B00A8D293 /* SearchResultViewModel.swift in Sources */,
 				9B86549424065AF90055ACAF /* PersonDB+CoreDataClass.swift in Sources */,
 				9B86549624065AF90055ACAF /* EquipmentDB+CoreDataClass.swift in Sources */,
+				9B3ED3AD240950E400CC33C2 /* ListViewModel.swift in Sources */,
 				9B37D7C724012297004B5673 /* LoginViewModel.swift in Sources */,
 				9BA86AA524091A6200A8D293 /* DetailResultViewController.swift in Sources */,
 				9B86549224065AF90055ACAF /* RoomDB+CoreDataClass.swift in Sources */,

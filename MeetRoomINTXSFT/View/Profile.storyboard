@@ -211,7 +211,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="RqH-M0-Nhc">
-                                <rect key="frame" x="0.0" y="44" width="414" height="907"/>
+                                <rect key="frame" x="0.0" y="-43" width="414" height="1043"/>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OnO-SL-DKN">
                                 <rect key="frame" x="0.0" y="44" width="414" height="956"/>
@@ -336,7 +336,7 @@
                                                 </state>
                                             </button>
                                         </subviews>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="B15-ge-wfZ" firstAttribute="top" secondItem="rSu-Fa-qf2" secondAttribute="top" constant="40" id="CAN-SW-CAt"/>
                                             <constraint firstItem="UeG-kz-4ha" firstAttribute="top" secondItem="dw9-7G-oZL" secondAttribute="bottom" constant="39" id="Dh6-mf-nDS"/>
@@ -363,14 +363,14 @@
                                 <viewLayoutGuide key="frameLayoutGuide" id="m1O-nV-gNi"/>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="OnO-SL-DKN" firstAttribute="trailing" secondItem="XeL-ID-i7y" secondAttribute="trailing" id="2Gv-V0-H6c"/>
                             <constraint firstItem="RqH-M0-Nhc" firstAttribute="leading" secondItem="XeL-ID-i7y" secondAttribute="leading" id="77l-ye-qJk"/>
                             <constraint firstItem="XeL-ID-i7y" firstAttribute="trailing" secondItem="RqH-M0-Nhc" secondAttribute="trailing" id="9UF-cC-4Mw"/>
-                            <constraint firstItem="XeL-ID-i7y" firstAttribute="bottom" secondItem="RqH-M0-Nhc" secondAttribute="bottom" id="G9N-cb-BHu"/>
+                            <constraint firstItem="XeL-ID-i7y" firstAttribute="bottom" secondItem="RqH-M0-Nhc" secondAttribute="bottom" constant="-49" id="G9N-cb-BHu"/>
                             <constraint firstItem="OnO-SL-DKN" firstAttribute="leading" secondItem="XeL-ID-i7y" secondAttribute="leading" id="LpY-Xp-huH"/>
-                            <constraint firstItem="RqH-M0-Nhc" firstAttribute="top" secondItem="XeL-ID-i7y" secondAttribute="top" id="Q3V-PR-Btf"/>
+                            <constraint firstItem="RqH-M0-Nhc" firstAttribute="top" secondItem="XeL-ID-i7y" secondAttribute="top" constant="-87" id="Q3V-PR-Btf"/>
                             <constraint firstItem="OnO-SL-DKN" firstAttribute="top" secondItem="XeL-ID-i7y" secondAttribute="top" id="QJy-Uh-9DY"/>
                             <constraint firstAttribute="bottom" secondItem="OnO-SL-DKN" secondAttribute="bottom" id="rOh-oL-sgk"/>
                         </constraints>

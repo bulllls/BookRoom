@@ -11,17 +11,17 @@ import CoreData
 
 class ListTableViewController: UITableViewController, UISplitViewControllerDelegate {
     
-    var dataBaseManager = DataBase()
-
+    var viewModel = ListViewModel()
     @IBOutlet var listOfRooms: UITableView!
     
     override func viewWillAppear(_ animated: Bool) {
-        try? dataBaseManager.frc.performFetch()
-        listOfRooms.reloadData()
+        try? viewModel.coreDataManager.frc.performFetch()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        viewModel.addBgImage(from: listOfRooms)
+        tableView.tableFooterView = UIView()
         switch UIDevice.current.userInterfaceIdiom {
         case .phone:
             splitViewController?.delegate = self
@@ -31,29 +31,17 @@ class ListTableViewController: UITableViewController, UISplitViewControllerDeleg
         default:
             break
         }
-        dataBaseManager.frc.delegate = self
-        //loadRoomData()
+        viewModel.coreDataManager.frc.delegate = self
+        viewModel.loadRoomData()
+        listOfRooms.reloadData()
     }
     
-    @objc func loadRoomData() {
-        let networkManager = Network()
-        networkManager.getAllRooms { [weak self] (rooms) in
-            self?.dataBaseManager.saveNewRoom(rooms: rooms)
-        }
-        print("test listTableTap")
-    }
-
 
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 1
-    }
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return dataBaseManager.frc.sections?[section].numberOfObjects ?? 0
+        return viewModel.coreDataManager.frc.sections?[section].numberOfObjects ?? 0
 
     }
     
@@ -63,14 +51,14 @@ class ListTableViewController: UITableViewController, UISplitViewControllerDeleg
     }
     /// удаляю выбранную ячейку
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        let object = dataBaseManager.frc.object(at: indexPath)
-        dataBaseManager.frc.managedObjectContext.delete(object)
-        try? dataBaseManager.frc.managedObjectContext.save()
+        let object = viewModel.coreDataManager.frc.object(at: indexPath)
+        viewModel.coreDataManager.frc.managedObjectContext.delete(object)
+        try? viewModel.coreDataManager.frc.managedObjectContext.save()
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "descriptionRoomTableViewCell", for: indexPath)
-        let object = dataBaseManager.frc.object(at: indexPath) as? RoomDB
+        let object = viewModel.coreDataManager.frc.object(at: indexPath) as? RoomDB
         cell.textLabel?.text = object?.id
         return cell
     }
