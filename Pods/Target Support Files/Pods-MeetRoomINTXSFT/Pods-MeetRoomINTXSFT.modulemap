@@ -1,4 +1,4 @@
-framework module Pods_MeetRoomINTXSFT {
+module Pods_MeetRoomINTXSFT {
   umbrella header "Pods-MeetRoomINTXSFT-umbrella.h"
 
   export *
