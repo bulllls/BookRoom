@@ -10,62 +10,53 @@ import UIKit
 
 class ProfileViewController: UIViewController {
     
-    var networkManager = Network()
-
     @IBOutlet weak var currentBookingTableView: UITableView!
     @IBOutlet weak var nameOfPerson: UILabel!
     @IBOutlet weak var mobileNumber: UILabel!
     @IBOutlet weak var email: UILabel!
     
-    
+    var viewModel = ProfileViewModel()
 
-    @IBAction func bookingHistoryButton(_ sender: Any) {
-      let newStoryBoard : UIStoryboard = UIStoryboard(name: "Profile", bundle: nil)
-        let VC = newStoryBoard.instantiateViewController(withIdentifier: "bookingHistoryStoryboard")
-        self.present(VC, animated: true, completion: nil)
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        currentBookingTableView.delegate = self
-        currentBookingTableView.dataSource = self
         currentBookingTableView.register(UITableViewCell.self, forCellReuseIdentifier: "currentBookingTableViewCell")
-        currentBookingTableView.backgroundColor = .clear
-        
-        loadPersonalData()
+        viewModel.loadPersonalData()
+        viewModel.name.observeNext{ [weak self] value in
+            self?.nameOfPerson.text = value
+        }.dispose(in: bag)
+        viewModel.email.observeNext{ [weak self] value in
+            self?.email.text = value
+        }.dispose(in: bag)
+        viewModel.phoneNumber.observeNext{ [weak self] value in
+            self?.mobileNumber.text = value
+        }.dispose(in: bag)
     }
     
-    func loadPersonalData() {
-        networkManager.getPersonInfo() { [weak self] (person) in
-            self?.nameOfPerson.text = person.name
-            self?.email.text = person.email
-        }
+    @IBAction func bookingHistoryButton(_ sender: Any) {
+        let newStoryBoard : UIStoryboard = UIStoryboard(name: "Profile", bundle: nil)
+        let vc = newStoryBoard.instantiateViewController(withIdentifier: "bookingHistoryStoryboard")
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
 
-extension ProfileViewController: UITableViewDataSource {
+extension ProfileViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "currentBookingTableViewCell", for: indexPath)
-        cell.textLabel?.text = "Room №3 29.02.2019 15:10"
-        cell.textLabel?.textColor = .red
         cell.backgroundColor = .clear
+        cell.textLabel?.text = "Room"
         return cell
-    }
-}
-
-extension ProfileViewController: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UITableView.automaticDimension
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
     }
 }
+
+    
+
 
 
