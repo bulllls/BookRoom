@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="81" translatesAutoresizingMaskIntoConstraints="NO" id="l0i-3S-zQf">
-                                <rect key="frame" x="30" y="94" width="220" height="287.5"/>
+                                <rect key="frame" x="30" y="138" width="220" height="287.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="RV6-1u-xTl">
                                         <rect key="frame" x="0.0" y="0.0" width="97" height="287.5"/>
@@ -146,7 +146,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="descriptionRoomTableViewCell" id="X0y-Q5-wSe" customClass="DescriptionRoomTableViewCell" customModule="MeetRoomINTXSFT" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="X0y-Q5-wSe">
                                 <rect key="frame" x="0.0" y="109" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="X0y-Q5-wSe" id="DBb-gN-xKU">
@@ -250,7 +250,7 @@
             </objects>
             <point key="canvasLocation" x="924" y="1817.5412293853076"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Список переговорок-->
         <scene sceneID="9OO-ml-GSr">
             <objects>
                 <tableViewController clearsSelectionOnViewWillAppear="NO" id="ysN-Zx-agm" customClass="ListTableViewController" customModule="MeetRoomINTXSFT" customModuleProvider="target" sceneMemberID="viewController">
@@ -258,14 +258,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="sectionIndexColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="descriptionRoomTableViewCell" id="YNg-nm-gBB">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="descriptionRoomTableViewCell" id="YNg-nm-gBB" customClass="DescriptionRoomTableViewCell" customModule="MeetRoomINTXSFT" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YNg-nm-gBB" id="k86-h8-3k7">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -273,7 +275,7 @@
                             <outlet property="delegate" destination="ysN-Zx-agm" id="jFE-dL-EMP"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="nmy-ve-h2m"/>
+                    <navigationItem key="navigationItem" title="Список переговорок" id="nmy-ve-h2m"/>
                     <connections>
                         <outlet property="listOfRooms" destination="oLn-BK-h75" id="9w8-SH-OId"/>
                     </connections>
@@ -319,6 +321,6 @@
         <image name="bg" width="640" height="1136"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="90V-MU-VPt"/>
+        <segue reference="c0a-pK-yRe"/>
     </inferredMetricsTieBreakers>
 </document>
