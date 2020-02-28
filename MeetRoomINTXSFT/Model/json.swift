@@ -56,7 +56,7 @@ class Json {
         {
             "name": "Rasl",
             "email": "string@mail.bom",
-            "phone": ""
+            "phone": "7788"
         }
     """
 }

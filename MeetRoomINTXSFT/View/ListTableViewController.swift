@@ -9,22 +9,30 @@
 import UIKit
 import CoreData
 
-class ListTableViewController: UITableViewController {
+class ListTableViewController: UITableViewController, UISplitViewControllerDelegate {
     
     var dataBaseManager = DataBase()
 
-    
     @IBOutlet var listOfRooms: UITableView!
     
     override func viewWillAppear(_ animated: Bool) {
         try? dataBaseManager.frc.performFetch()
+        listOfRooms.reloadData()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        switch UIDevice.current.userInterfaceIdiom {
+        case .phone:
+            splitViewController?.delegate = self
+            print("phone")
+        case .pad:
+            print("pad")
+        default:
+            break
+        }
         dataBaseManager.frc.delegate = self
-        loadRoomData()
-
+        //loadRoomData()
     }
     
     @objc func loadRoomData() {
@@ -71,57 +79,9 @@ class ListTableViewController: UITableViewController {
         tableView.deselectRow(at: indexPath, animated: true)
     }
     
-//    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        self.performSegue(withIdentifier: "goToRoomDescription", sender: indexPath)
-//
-//    }
-
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
+    func splitViewController(_ splitViewController: UISplitViewController, collapseSecondary secondaryViewController: UIViewController, onto primaryViewController: UIViewController) -> Bool {
         return true
     }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
 
 extension ListTableViewController: NSFetchedResultsControllerDelegate {
