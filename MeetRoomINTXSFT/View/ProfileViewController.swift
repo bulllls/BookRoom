@@ -9,36 +9,43 @@
 import UIKit
 
 class ProfileViewController: UIViewController {
+    
+    var network = Network()
 
-    
-    
-    @IBOutlet weak var nameOfPerson: UILabel!
-    @IBOutlet weak var surnameOfPerson: UILabel!
-    @IBOutlet weak var department: UILabel!
+
     @IBOutlet weak var imageOfPerson: UIImageView!
-    @IBOutlet weak var email: UILabel!
+    @IBOutlet weak var nameOfPerson: UILabel!
+    @IBOutlet weak var contentOfNameOfPerson: UILabel!
     @IBOutlet weak var mobileNumber: UILabel!
-    @IBOutlet weak var currentBooking: UILabel!
-    @IBOutlet weak var bookingHistory: UILabel!
-    @IBOutlet weak var emailContent: UILabel!
-    @IBOutlet weak var mobileNumberContent: UILabel!
-    @IBOutlet weak var currentBookingTableView: UITableView!
-    @IBOutlet weak var bookingHistoryTableView: UITableView!
+    @IBOutlet weak var contentOfMobileNumber: UILabel!
+    @IBOutlet weak var currentTableView: UITableView!
+    @IBOutlet weak var contentOfEmail: UILabel!
+    
 
-//    let font = UIFont(name: "Menlo Regular", size: 13)
+    
+    @IBAction func historyBookingsList(_ sender: Any) {
+        let main = UIStoryboard(name: "Profile", bundle: nil)
+        let second = main.instantiateViewController(withIdentifier: "bookingHistoryStoryboard")
+        self.present(second, animated: true, completion: nil)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        currentTableView.backgroundColor = .clear
 
-        imageOfPerson.layer.cornerRadius = imageOfPerson.frame.size.width/2
-        imageOfPerson.layer.borderColor = UIColor.white.cgColor
-        currentBookingTableView.delegate = self
-        currentBookingTableView.dataSource = self
-        currentBookingTableView.register(UITableViewCell.self, forCellReuseIdentifier: "CurrentBookingCell")
-        bookingHistoryTableView.delegate = self
-        bookingHistoryTableView.dataSource = self
-        bookingHistoryTableView.register(UITableViewCell.self, forCellReuseIdentifier: "BookingHistoryCell")
-
+        currentTableView.delegate = self
+        currentTableView.dataSource = self
+        currentTableView.register(UITableViewCell.self, forCellReuseIdentifier: "currentTableViewCell")
+        loadPersonName()
+        
+    }
+   func loadPersonName() {
+        
+        network.getPersonInfo { [weak self] (person) in
+            self?.contentOfNameOfPerson.text = person.name
+            self?.contentOfMobileNumber.text = person.phone
+            self?.contentOfEmail.text = person.email
+        }
     }
 }
 
@@ -48,45 +55,26 @@ extension ProfileViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if tableView == self.currentBookingTableView {
-                let cell = tableView.dequeueReusableCell(withIdentifier: "CurrentBookingCell", for: indexPath as IndexPath) as UITableViewCell
-                cell.textLabel?.text = "Room №3 29.02.2019 15:10"
+                let cell = tableView.dequeueReusableCell(withIdentifier: "currentTableViewCell", for: indexPath as IndexPath) as UITableViewCell
+                cell.textLabel?.text = "Room №4 28.02.2019 15:10"
             cell.textLabel?.textColor = .red
+            cell.textLabel?.font = UIFont(name: "Avenir", size: 14)
+            cell.backgroundColor = .clear
         return cell
-        } else {
-                let cell = tableView.dequeueReusableCell(withIdentifier: "BookingHistoryCell", for: indexPath as IndexPath) as UITableViewCell
-                cell.textLabel?.text = "Room №4 28.02.2019 11:10"
-//            cell.textLabel?.font = font
-        return cell
-    }
         }
-    
-    
 }
 
 extension ProfileViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
-        if tableView == self.currentBookingTableView {
-            if indexPath.row == 0 {
-            return 30
-        }
         return UITableView.automaticDimension
-        } else {
-            if indexPath.row == 0 {
-            return 30
-        }
-            return UITableView.automaticDimension
-            
-        }
+
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        if tableView == self.currentBookingTableView {
-        self.performSegue(withIdentifier: "goToCurrentBookingRoomSegue", sender: indexPath)
-        }
     }
     
 }
+
 
