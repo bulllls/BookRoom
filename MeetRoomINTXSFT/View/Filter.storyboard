@@ -16,14 +16,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="n3a-wN-0dL">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Дата:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AEV-Mb-2Zh">
                                 <rect key="frame" x="20" y="84" width="335" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
+                                <color key="highlightedColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </label>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="oma-v4-fRc">
                                 <rect key="frame" x="0.0" y="118" width="375" height="216"/>
@@ -47,7 +43,6 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Стол" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="giz-gV-O4J">
                                                 <rect key="frame" x="0.0" y="0.0" width="55" height="31"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="exD-Lj-Lf5">
@@ -61,7 +56,6 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Стулья" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wl6-3Z-FFY">
                                                 <rect key="frame" x="0.0" y="0.0" width="55" height="31"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GX8-LZ-hkv">
@@ -75,7 +69,6 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Кулер" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8JW-oj-aH2">
                                                 <rect key="frame" x="0.0" y="0.0" width="55" height="31"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Gn8-g9-PBp">
@@ -89,7 +82,6 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Телевизор" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wf9-E8-0ef">
                                                 <rect key="frame" x="0.0" y="0.0" width="85" height="31"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qfj-Yx-LW3">
@@ -103,7 +95,6 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Компьютер" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C0e-l9-mV2">
                                                 <rect key="frame" x="0.0" y="0.0" width="91" height="31"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="9K5-3c-WBC">
@@ -117,7 +108,6 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Интернет" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NP8-dn-j8m">
                                                 <rect key="frame" x="0.0" y="0.0" width="76.5" height="31"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TQd-J9-Phv">
@@ -131,7 +121,6 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Доска" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xVO-dZ-S4g">
                                                 <rect key="frame" x="0.0" y="0.0" width="55" height="31"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="YMc-39-WLC">
@@ -145,7 +134,6 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Принтер" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BZ3-CO-28g">
                                                 <rect key="frame" x="0.0" y="0.0" width="69.5" height="31"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="dcI-7v-V4m">
@@ -178,7 +166,7 @@
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="un6-zE-sCR">
                                 <rect key="frame" x="16" y="342" width="343" height="32"/>
-                                <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="32" id="xQb-Us-wjf"/>
                                 </constraints>
@@ -190,6 +178,7 @@
                                 </connections>
                             </button>
                         </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="mtf-Tp-5fS" firstAttribute="bottom" secondItem="oma-v4-fRc" secondAttribute="bottom" id="2NZ-tL-1DO"/>
                             <constraint firstItem="mtf-Tp-5fS" firstAttribute="trailing" secondItem="oma-v4-fRc" secondAttribute="trailing" id="4Rh-EM-kmp"/>
@@ -203,15 +192,11 @@
                             <constraint firstItem="un6-zE-sCR" firstAttribute="top" secondItem="oma-v4-fRc" secondAttribute="bottom" constant="8" id="Mjh-iX-WYY"/>
                             <constraint firstItem="OCa-N4-aDJ" firstAttribute="leading" secondItem="oma-v4-fRc" secondAttribute="leading" id="PbN-Wy-5OY"/>
                             <constraint firstItem="OCa-N4-aDJ" firstAttribute="top" secondItem="oma-v4-fRc" secondAttribute="top" id="QGf-c1-dEw"/>
-                            <constraint firstAttribute="bottom" secondItem="n3a-wN-0dL" secondAttribute="bottom" id="T5p-NS-iCP"/>
-                            <constraint firstItem="n3a-wN-0dL" firstAttribute="leading" secondItem="qCL-uG-UPo" secondAttribute="leading" id="U7A-uU-hd5"/>
                             <constraint firstItem="un6-zE-sCR" firstAttribute="leading" secondItem="qCL-uG-UPo" secondAttribute="leading" constant="16" id="WTu-ZX-mh3"/>
                             <constraint firstItem="OCa-N4-aDJ" firstAttribute="bottom" secondItem="oma-v4-fRc" secondAttribute="bottom" id="Xyv-eB-rLh"/>
                             <constraint firstItem="AEV-Mb-2Zh" firstAttribute="top" secondItem="qCL-uG-UPo" secondAttribute="top" constant="40" id="ain-kY-g1U"/>
                             <constraint firstItem="oma-v4-fRc" firstAttribute="top" secondItem="AEV-Mb-2Zh" secondAttribute="bottom" constant="10" id="gZL-Ip-z8x"/>
-                            <constraint firstItem="n3a-wN-0dL" firstAttribute="top" secondItem="Ili-rc-5M6" secondAttribute="top" id="hPH-WJ-JTf"/>
                             <constraint firstItem="mtf-Tp-5fS" firstAttribute="top" secondItem="oma-v4-fRc" secondAttribute="top" id="jnh-OO-QsU"/>
-                            <constraint firstItem="n3a-wN-0dL" firstAttribute="trailing" secondItem="qCL-uG-UPo" secondAttribute="trailing" id="qhZ-2l-qxN"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="qCL-uG-UPo"/>
                     </view>
@@ -264,7 +249,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bg" width="640" height="1136"/>
         <image name="icon" width="32" height="32"/>
     </resources>
 </document>

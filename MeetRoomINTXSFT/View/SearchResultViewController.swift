@@ -16,7 +16,6 @@ class SearchResultViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewModel.addBgImage(from: table)
         tableView.tableFooterView = UIView()
         viewModel.networkManajer.getAllRooms { [weak self](rooms) in
             self?.viewModel.allRooms.value = rooms
