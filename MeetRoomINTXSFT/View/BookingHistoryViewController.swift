@@ -15,7 +15,6 @@ class BookingHistoryViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewModel.addBgImage(from: historyTableView)
         historyTableView.register(UITableViewCell.self, forCellReuseIdentifier: "historyBookingTableViewCell")
     }
     

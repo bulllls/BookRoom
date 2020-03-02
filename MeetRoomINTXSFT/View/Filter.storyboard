@@ -166,13 +166,10 @@
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="un6-zE-sCR">
                                 <rect key="frame" x="16" y="342" width="343" height="32"/>
-                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="32" id="xQb-Us-wjf"/>
                                 </constraints>
-                                <state key="normal" title="Выбрать">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
+                                <state key="normal" title="Выбрать"/>
                                 <connections>
                                     <action selector="choose:" destination="lGk-hI-ViA" eventType="touchUpInside" id="hdw-NU-RHs"/>
                                 </connections>
@@ -200,7 +197,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="qCL-uG-UPo"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Забронировать" image="icon" id="ytH-R9-lf7"/>
+                    <tabBarItem key="tabBarItem" title="Забронировать" image="icon" id="ytH-R9-lf7">
+                        <color key="badgeColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    </tabBarItem>
                     <navigationItem key="navigationItem" id="fQi-Fs-dsG">
                         <barButtonItem key="rightBarButtonItem" title=" " id="QSt-Mr-KAy">
                             <connections>

@@ -46,7 +46,6 @@ extension ProfileViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "currentBookingTableViewCell", for: indexPath)
-        cell.backgroundColor = .clear
         cell.textLabel?.text = "Room"
         return cell
     }
