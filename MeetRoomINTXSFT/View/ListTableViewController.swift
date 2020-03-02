@@ -20,7 +20,6 @@ class ListTableViewController: UITableViewController, UISplitViewControllerDeleg
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewModel.addBgImage(from: listOfRooms)
         tableView.tableFooterView = UIView()
         switch UIDevice.current.userInterfaceIdiom {
         case .phone:
