@@ -9,6 +9,43 @@
 import Foundation
 
 class Network {
+    //   let Profile = try? newJSONDecoder().decode(Profile.self, from: jsonData)
+    var options = [String:String]()
+       //method: 'GET',
+       //url: '/rest/api/3/myself',
+       //auth: username: 'email@example.com', password: '<api_token>',
+       //headers: 'Accept': 'application/json'
+       
+    //The URIs for resources have the following structure:
+
+    //https://<site-url>/rest/api/3/<resource-name>
+
+   // For example, https://your-domain.atlassian.net/rest/api/3/issue/DEMO-1
+    
+    func sendRequest(_ url: String, parameters: [String: String], completion: @escaping ([String: Any]?, Error?) -> Void) {
+        var components = URLComponents(string: url)!
+        components.queryItems = parameters.map { (key, value) in
+            URLQueryItem(name: key, value: value)
+        }
+        let request = URLRequest(url: components.url!)
+
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+            guard let data = data,                            // is there data
+                let response = response as? HTTPURLResponse,  // is there HTTP response
+                (200 ..< 300) ~= response.statusCode,         // is statusCode 2XX
+                error == nil else {                           // was there no error, otherwise ...
+                    completion(nil, error)
+                    return
+            }
+
+            let responseObject = (try? JSONSerialization.jsonObject(with: data)) as? [String: Any]
+            completion(responseObject, nil)
+        }
+        task.resume()
+    }
+    
+    
+    
     func getAllRooms(completion: @escaping ([Room]) -> Void){
         if let json = Json.jsonRooms.data(using: .utf8) {
             let decoder = JSONDecoder()

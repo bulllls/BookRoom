@@ -67,3 +67,24 @@ enum StoryboardList: String {
 
 let pickerTimeValue = ["1:00", "2:00", "3:00", "4:00", "5:00", "6:00", "7:00", "8:00", "9:00", "10:00", "11:00", "12:00", "13:00", "14:00", "15:00", "16:00", "17:00", "18:00", "19:00", "20:00", "21:00", "22:00", "23:00", "24:00"]
 let pickerPersonValue = ["1 человек", "до 5 человек", "больше 5 человек", "до 10 человек", "больше 10 человек"]
+
+
+// MARK: - Profile
+struct Profile: Codable {
+    let key: String
+    let accountID: String
+    let name: String
+    let emailAddress: String
+    let avatarUrls: AvatarUrls
+    let displayName: String
+    let active: Bool
+    let timeZone: String
+}
+
+// MARK: - AvatarUrls
+struct AvatarUrls: Codable {
+    let the48X48: String
+    let the24X24: String
+    let the16X16: String
+    let the32X32: String
+}
